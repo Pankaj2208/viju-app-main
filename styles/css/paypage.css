@@ -1,0 +1,12 @@
+/* Paypage.css */
+
+.subscription-plans-container {
+    margin-left: 0; /* Remove the left margin to align with the sidebar */
+    margin-right: 0; /* Remove the right margin to center the content */
+   }
+   
+   /* Optional: Add some padding to the subscription plans container for better spacing */
+   .subscription-plans-container .row {
+    padding: 20px;
+   }
+   

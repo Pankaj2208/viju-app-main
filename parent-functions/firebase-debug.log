@@ -1,0 +1,36 @@
+[debug] [2024-06-03T06:35:27.921Z] ----------------------------------------------------------------------
+[debug] [2024-06-03T06:35:27.923Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-06-03T06:35:27.924Z] CLI Version:   13.10.1
+[debug] [2024-06-03T06:35:27.924Z] Platform:      win32
+[debug] [2024-06-03T06:35:27.924Z] Node Version:  v20.10.0
+[debug] [2024-06-03T06:35:27.924Z] Time:          Mon Jun 03 2024 12:05:27 GMT+0530 (India Standard Time)
+[debug] [2024-06-03T06:35:27.924Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-03T06:35:28.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-03T06:35:28.011Z] > authorizing via signed-in user (kurtadikaranand@gmail.com)
+[debug] [2024-06-03T06:35:28.011Z] [iam] checking project vijuedtech for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-03T06:35:28.013Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vijuedtech:testIamPermissions [none]
+[debug] [2024-06-03T06:35:28.013Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vijuedtech:testIamPermissions x-goog-quota-user=projects/vijuedtech
+[debug] [2024-06-03T06:35:28.014Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vijuedtech:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-03T06:35:29.729Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vijuedtech:testIamPermissions 200
+[debug] [2024-06-03T06:35:29.729Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vijuedtech:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-03T06:35:29.729Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/vijuedtech/serviceAccounts/vijuedtech@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-06-03T06:35:29.729Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/vijuedtech/serviceAccounts/vijuedtech@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-03T06:35:31.511Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/vijuedtech/serviceAccounts/vijuedtech@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-06-03T06:35:31.512Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/vijuedtech/serviceAccounts/vijuedtech@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-06-03T06:35:31.512Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vijuedtech [none]
+[debug] [2024-06-03T06:35:31.942Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vijuedtech 200
+[debug] [2024-06-03T06:35:31.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vijuedtech {"projectId":"vijuedtech","projectNumber":"195441434170","displayName":"Viju Edtech","name":"projects/vijuedtech","resources":{"hostingSite":"vijuedtech","storageBucket":"vijuedtech.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_e11781d1-cc4a-4d99-9349-3984aa1622f3"}
+[debug] [2024-06-03T06:35:31.944Z] Specified "public" directory "out" does not exist; Deploy to Hosting site "student" may fail or be empty.
+[info] 
+[info] === Deploying to 'vijuedtech'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2024-06-03T06:35:31.950Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/vijuedtech:test [none]
+[debug] [2024-06-03T06:35:31.950Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/vijuedtech:test [omitted]
+[debug] [2024-06-03T06:35:33.417Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/vijuedtech:test 200
+[debug] [2024-06-03T06:35:33.417Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/vijuedtech:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2024-06-03T06:35:33.419Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vijuedtech [none]

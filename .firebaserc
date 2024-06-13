@@ -1,0 +1,53 @@
+{
+  "projects": {
+    "default": "vijuedtech",
+    "development": "vijuedtech",
+    "staging":"vijuedtech"
+  },
+  "targets": {
+    "viju-dev-1425": {
+      "hosting": {
+        "employee": [
+          "viju-dev-1425"
+        ],
+        "student": [
+          "viju-dev-1425-student"
+        ],
+        "teacher": [
+          "viju-dev-1425-teachers"
+        ]
+      }
+    },
+    "viju-prod": {
+      "hosting": {
+        "employee": [
+          "viju-admin"
+        ],
+        "student": [
+          "viju-student"
+        ],
+        "teacher": [
+          "viju-teachers"
+        ],
+        "parent": [
+          "viju-parents"
+        ]
+      }
+    },
+    "vijuedtech": {
+      "hosting": {
+        "student": [
+          "vijuedtech"
+        ],
+        "employee": [
+          "d48009"
+        ],
+        "teacher": [
+          "fb6b0c"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
